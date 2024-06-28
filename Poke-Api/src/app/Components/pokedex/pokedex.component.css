@@ -1,0 +1,232 @@
+
+
+
+
+.pokedex {
+    width: 500px;
+    height: 600px;
+    background-color: red;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+}
+
+.derecha {
+    position: absolute;
+    right: 358px;
+    top: 70px;
+    width: 180px;
+    height: 538px;
+    background-color: red;
+    border-left: 2px solid black;
+}
+
+.derecha-dos {
+    position: absolute;
+    right: 366px;
+    top: 28px;
+    width: 80px;
+    height: 60px;
+    background-color: red;
+    rotate: 51deg;
+    border-top: 2px solid black;
+}
+
+.derecha-tres {
+    position: absolute;
+    right: 300px;
+    top: 69px;
+    width: 200px;
+    height: 539px;
+    background-color: red;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+
+.left {
+    width: 350px;
+    height: 600px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    width: 100%;
+    height: 80px;
+}
+
+.divisor {
+    position: absolute;
+    top: 10px;
+    right: 530px;
+    width: 8px;
+    height: 598px;
+    background-color: black;
+    z-index: 300;
+    
+}
+
+
+.uno {
+    border: 1px inset black;
+    border-radius: 50%;
+    background-color: rgb(71, 250, 235);
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    
+    
+}
+
+.dos {
+    border: 1px inset black;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    animation: blik 2.5s infinite alternate;
+    animation-delay: 1s;         
+}
+
+.tres {
+    border: 1px inset black;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    animation: blik 2.5s infinite alternate;
+    animation-delay: 2s;
+}
+
+.cuatro {
+    border: 1px inset black;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(41, 243, 41);
+    animation: blik 2.5s infinite alternate;
+    animation-delay: 2.5s;
+}
+
+
+
+
+.pokedex-screen-conteiner {
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(165, 157, 157);
+    background-image: url(../../image//PokedexBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 12px double black;
+    color: rgb(252, 115, 65);
+}
+
+
+.unoB {
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    background-color: rgb(36, 124, 240);
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.dosB {
+    width: 78px;
+    height: 30px;
+    margin: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(17, 252, 9);
+    text-align: center;
+    cursor: pointer;
+}
+
+.tresB {
+    width: 78px;
+    height: 30px;
+    margin: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(216, 182, 28);
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.left-buttom-lights {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.buscador-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    gap: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#buscador {
+    background-color: rgb(216, 182, 28);
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#buscar {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(232, 11, 15, 1) 100%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.unoB:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(136, 215, 252) 0%, rgb(29, 49, 231) 100%);
+}
+
+.dosB:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(207, 248, 169) 0%, rgb(32, 151, 48) 100%);
+}
+
+.tresB:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(245, 211, 147) 0%, rgb(248, 136, 31) 100%);
+}
+
+
+@keyframes blik{
+    0% {
+        opacity: 0;        
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

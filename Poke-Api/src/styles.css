@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(156, 146, 238);
+    background-image: url(../src/app/image/BackgroundPage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

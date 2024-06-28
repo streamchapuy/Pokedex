@@ -1,0 +1,52 @@
+<div class="pokedex">
+    <div class="left">
+        <div class="left-top">
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+            <div class="cuatro"></div>
+        </div>
+        <div class="pokedex-screen-conteiner">
+            <app-poke-screen class="Visor" [pokemon]="currentPokemon"></app-poke-screen>            
+        </div>
+        <div class="pokedex-left-bottom">
+            <div class="left-buttom-lights">
+                <button class="unoB" (click)="playPokemonSound(currentPokemon.name)"></button>
+                <button class="dosB" (click)="previousPokemon()">
+                    Anterior
+                </button>
+                <button class="tresB" (click)="nextPokemon()">
+                    Siguiente
+                </button>
+            </div>
+            <div class="buscador-conteiner"></div>
+            <label class="formulario">
+
+                <input type="text" name="" id="buscador" placeholder=" Buscar Pokemon"
+                [(ngModel)] = "pokemonToSearch"
+                (keydown)="onkeydown($event)"                
+                >
+
+                <button type="submit" id="buscar"
+                    (click)="onSearchClick()"
+                ></button>
+            </label>
+            <ul
+            *ngIf="sugerencia.length > 0"
+            class="sugerencia"
+            >
+                <li
+                *ngFor="let sugerencia of sugerencia"
+               (click)="selectSugerencia(sugerencia)"
+                >
+                >{{sugerencia}}
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+</div>
+<div class="divisor"></div>
+<div class="derecha-dos"></div>
+<div class="derecha"></div>
+<div class="derecha-tres"></div>
